@@ -42,6 +42,10 @@ class Answer:
             return True
         return False
 
+    def answer_is_exit(self):
+        if self.text == 'exit':
+            return True
+
     def answer_is_no(self):
         if self.text.lower() == "no" or self.text.lower() == 'n':
             return True

@@ -24,8 +24,8 @@ class TaskList:
 
         print("New tasklist initalized")
     def addatask(self, task):
-        self.llist.insert_node_when_smaller(task)
-        self.Queuelist.append(task)
+        self.llist.addNodeLast(task)
+        #self.Queuelist.append(task)
 
 
 
@@ -48,11 +48,12 @@ tasklist.addatask(t2)
 
 
 i = tasklist.llist.head
-while True:
-    if i:
-        print(i.value)
-        i = i.next
-    else:
-        break
+if __name__ == '__main__':
+    while True:
+        if i:
+            print(i.value)
+            i = i.next
+        else:
+            break
 
 
